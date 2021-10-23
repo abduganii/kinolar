@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stely.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <button class="bookmark-btn">Bookmarks</button>
+            <form>
+                <select class="ganreSelect">
+                    <option value="All">All</option>
+                </select>
+                <input class="searchInput" type="text">
+                <select class="sortSelect">
+                    <option value="0">Aa-Zz</option>
+                    <option value="1">Zz-Az</option>
+                    <option value="2">new-old</option>
+                    <option value="3">old-new</option>
+                </select>
+                <button>click</button>
+            </form>
+        </div>
+    </header>
+
+    <div class="modal">
+        <div class="modal-content ">
+            <h2 class="modal-name">kino</h2>
+            <p class="modal-des">kino p</p>
+            <button class="modal-btn">&times;</button>
+        </div>
+    </div>
+
+    <ul class="movie-list" data-id="salom">
+
+    </ul>
+
+    <div class="book-madal">
+        <div class="book-madal-content">
+            <div class="flex">
+                <h2 class="h2-bookmark">Bookmarks</h2>
+                <button class="book-romove-btn">&times;</button>
+            </div>
+            <ul class="bookmark-list">
+
+
+            </ul>
+        </div>
+    </div>
+    <template id="movie-template">
+
+        <li class="movie-item">
+            <img class="movie-img" src="https://picsum.photos/250" width="270" alt="foto">
+            <div class="movie-div">
+                <h2 class="movie-name">kino</h2>
+                <ul class="movie-genre">
+
+                </ul>
+                <span class="movie-age">1994</span> <br>
+                <button class="movie-btn">more</button>
+                <button class="movie-bookmarks">bookmark</button>
+            </div>
+
+        </li>
+
+    </template>
+
+    <template id="bookmar-teplete">
+        <li class="bookmark-item">
+            <h3 class="bookmar-h3">Kino-name</h3>
+            <button class="bookmark-btn-dalite">remove</button>
+        </li>
+    </template>
+
+    <script src="./js/films.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

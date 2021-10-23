@@ -1,0 +1,116 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+padding-left: 20px;
+padding-right: 20px;
+display: flex;
+justify-content: space-between;
+flex-direction: row-reverse;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+
+.modal{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.modal-content{
+    background-color: white;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px 30px;
+    position: relative;
+}
+.modal-btn{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 0 4px;
+}
+
+.movie-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+li{
+    list-style: none;
+}
+.movie-list li {
+    width: 300px;
+}
+.movie-btn{
+    margin-top: auto;
+    display: inline-block;
+}
+.book-madal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.book-madal-content{
+    position: absolute;
+    max-width: 400px;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding: 20px;
+    overflow-y: scroll;
+}
+.h2-bookmark{
+    margin-bottom: 10px;
+}
+.bookmark-item{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+.modal-open{
+    display: flex;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.movie-item{
+    border: 1px solid black;
+    margin-bottom: 30px;
+    max-width: 270px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.movie-div{
+    padding: 10px;
+}
